@@ -1,2 +1,41 @@
 @import "./mixins.scss";
 @import "./variables.scss";
+
+// === HEADER === //
+
+.menu {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_item {
+        margin: 0 17px;
+        @include header_silver;
+        &:hover {
+            @include header_active;
+        }
+        cursor: pointer;
+    }
+}
+
+.btn_menu {
+    &_outline {
+        @include button_outline;
+        width: 132px;
+        height: 44px;
+        margin-left: 17px;
+    }
+    &_filled {
+        @include button_filled;
+        width: 132px;
+        height: 44px;
+        margin-left: 18px;
+    }
+}
+
+// === MAIN === //

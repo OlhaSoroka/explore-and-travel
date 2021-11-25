@@ -22,13 +22,15 @@
     font-size: 16px;
     line-height: 19px;
     color: $header_black;
+    transition: color 0.2s;
 }
 @mixin header_silver {
     font-family: $inter;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     color: $silver_header;
+    transition: color 0.2s;
 }
 @mixin form_label {
     font-weight: 600;
@@ -119,14 +121,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.2s;
 }
 @mixin button_filled {
     @include button;
     color: white;
     background-color: $orange;
+    &:hover {
+        background-color: darken($color: $orange, $amount: 5);
+    }
 }
 @mixin button_outline {
     @include button;
     color: $orange;
     background-color: white;
+    &:hover {
+        @include button_filled;
+    }
 }
