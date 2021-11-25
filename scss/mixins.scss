@@ -1,0 +1,132 @@
+@import "./variables.scss";
+
+// === FONTS ==== //
+
+@mixin header {
+    font-family: $playfair;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    color: $header_black;
+}
+@mixin subheader {
+    font-family: $playfair;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 50px;
+    color: $black;
+}
+@mixin header_active {
+    font-family: $inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $header_black;
+}
+@mixin header_silver {
+    font-family: $inter;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: $silver_header;
+}
+@mixin form_label {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: $header_black;
+}
+@mixin input_text {
+    font-family: $inter;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 32px;
+    color: $input_text;
+}
+@mixin main_text {
+    font-family: $mulish;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+    color: $silver_text;
+}
+@mixin quote_text {
+    font-family: $mulish;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: $black;
+}
+@mixin name {
+    font-family: $inter;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 48px;
+    color: $black;
+}
+@mixin founder {
+    font-family: $inter;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 48px;
+    color: $black;
+}
+@mixin stories_subheader {
+    font-family: $inter;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 30px;
+    color: $black;
+}
+
+@mixin stories_text {
+    font-family: $inter;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 26px;
+    color: $silver_text;
+}
+@mixin link {
+    font-family: $inter;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 28px;
+    color: $orange;
+}
+@mixin footer_list_label {
+    font-family: $mulish;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 60px;
+    color: $black;
+}
+@mixin footer_list_item {
+    font-family: $mulish;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 38px;
+    color: $footer_text;
+}
+
+// === BUTTON === //
+@mixin button {
+    font-family: $inter;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 60px;
+    border: 1px solid $orange;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin button_filled {
+    @include button;
+    color: white;
+    background-color: $orange;
+}
+@mixin button_outline {
+    @include button;
+    color: $orange;
+    background-color: white;
+}
