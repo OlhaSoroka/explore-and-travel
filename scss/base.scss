@@ -99,6 +99,8 @@
         img {
             position: absolute;
             right: -85px;
+            width: 687px;
+            height: 654px;
         }
     }
     &_img_circle_first {
@@ -120,12 +122,10 @@
         left: 873px;
     }
 }
-
 .dropdown_item {
     margin: 10px;
     cursor: pointer;
 }
-
 .dropdown {
     width: 220px;
     height: 52px;
@@ -135,16 +135,63 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-
-    &-list {
-        position: absolute;
-        bottom: -220px;
-        width: 220px;
-        left: 0px;
-        border: 1px solid $silver_border;
-        border-radius: 6px;
-        & > div {
-            padding: 10px;
+}
+// === PROMO === //
+.promo {
+    margin-top: 333px;
+    &_image {
+        position: relative;
+        flex-basis: 50%;
+        img {
+            position: absolute;
+            left: -70px;
+        }
+    }
+    &_container {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    &_content {
+        &_wrapper {
+            flex-basis: 50%;
+            margin-left: 102px;
+        }
+        &_subheader {
+            @include subheader;
+            margin-top: 120px;
+            width: 460px;
+        }
+        &_text {
+            @include main_text;
+            margin-top: 20px;
+            width: 460px;
+        }
+    }
+    &_btn {
+        @include button_filled;
+        width: 164px;
+        height: 48px;
+        margin-top: 40px;
+    }
+    &_img {
+        &_circle {
+            img {
+                width: 20px;
+                height: 20px;
+            }
+            position: absolute;
+            left: 1020px;
+            top: 385px;
+        }
+        &_plus {
+            img {
+                width: 20px;
+                height: 20px;
+            }
+            position: absolute;
+            left: 630px;
+            top: -50px;
         }
     }
 }
