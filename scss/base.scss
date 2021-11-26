@@ -39,3 +39,112 @@
 }
 
 // === MAIN === //
+.main {
+    position: relative;
+    margin-top: 80px;
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_content {
+        display: flex;
+        flex-direction: column;
+    }
+    &_header {
+        @include header;
+        margin-top: 20px;
+    }
+    &_dropdown_link {
+        @include form_label;
+        margin-top: 74px;
+    }
+    &_divider {
+        width: 32px;
+        height: 2px;
+        background-color: $header_black;
+        margin-top: 21px;
+    }
+    &_dropdown {
+        margin-top: 48px;
+        display: flex;
+        flex-direction: column;
+        margin-left: -12px;
+        &_wrapper_top {
+            display: flex;
+            justify-content: space-between;
+        }
+        &_wrapper_bottom {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &_btn {
+        @include button_filled;
+        width: 180px;
+        height: 52px;
+        margin-top: 51px;
+    }
+    &_img_plus {
+        img {
+            width: 20px;
+            height: 20px;
+        }
+        transform: rotate(-5deg);
+        position: absolute;
+        top: 60px;
+        left: 820px;
+    }
+    &_image {
+        position: relative;
+        img {
+            position: absolute;
+            right: -85px;
+        }
+    }
+    &_img_circle_first {
+        img {
+            width: 25px;
+            height: 25px;
+        }
+        position: absolute;
+        top: 320px;
+        left: 140px;
+    }
+    &_img_circle_second {
+        img {
+            width: 20px;
+            height: 20px;
+        }
+        position: absolute;
+        top: 660px;
+        left: 873px;
+    }
+}
+
+.dropdown_item {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.dropdown {
+    width: 220px;
+    height: 52px;
+    border: 1px solid $silver_border;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+    &-list {
+        position: absolute;
+        bottom: -220px;
+        width: 220px;
+        left: 0px;
+        border: 1px solid $silver_border;
+        border-radius: 6px;
+        & > div {
+            padding: 10px;
+        }
+    }
+}
