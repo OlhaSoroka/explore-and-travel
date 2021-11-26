@@ -320,11 +320,10 @@
   top: 2315px;
   background: #ffffff;
   border-radius: 0px 6px 0px 0px;
-  font-family: Inter;
-  font-style: normal;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 17px;
-  line-height: 25px;
+  padding: 11px 0 5px 0;
 }
 .features_card_descr span {
   font-family: "Mulish", sans-serif;
