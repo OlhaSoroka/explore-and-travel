@@ -222,7 +222,7 @@
 }
 .promo_content_wrapper {
   flex-basis: 50%;
-  margin-left: 102px;
+  margin-left: 122px;
 }
 .promo_content_subheader {
   font-family: "Playfair Display", serif;
@@ -231,7 +231,7 @@
   line-height: 50px;
   color: #000000;
   margin-top: 120px;
-  width: 460px;
+  width: 480px;
 }
 .promo_content_text {
   font-family: "Mulish", sans-serif;
@@ -240,7 +240,7 @@
   line-height: 30px;
   color: #7d7987;
   margin-top: 20px;
-  width: 460px;
+  width: 480px;
 }
 .promo_btn {
   font-family: "Inter", sans-serif;
@@ -277,6 +277,108 @@
   top: -50px;
 }
 .promo_img_plus img {
+  width: 20px;
+  height: 20px;
+}
+
+.features_container {
+  margin: 392px 50px 0 50px;
+}
+.features_content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 56px;
+}
+.features_subheader {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #000000;
+}
+.features_link {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 28px;
+  color: #fb8f1d;
+}
+.features_link img {
+  padding-left: 11px;
+}
+.features_card {
+  width: 261px;
+  height: 332px;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-end;
+}
+.features_card_descr {
+  width: 120px;
+  height: 56px;
+  left: 240px;
+  top: 2315px;
+  background: #ffffff;
+  border-radius: 0px 6px 0px 0px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 25px;
+}
+.features_card_descr span {
+  font-family: "Mulish", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 30px;
+  color: #7d7987;
+  font-size: 15px;
+}
+.features_card_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.features_card:nth-child(1) {
+  background: url(../img/image\ 1.png);
+}
+.features_card:nth-child(2) {
+  background: url(../img/image2.png);
+}
+.features_card:nth-child(3) {
+  background: url(../img/image3.png);
+}
+.features_card:nth-child(4) {
+  background: url(../img/imge4.png);
+}
+.features_img_container {
+  position: relative;
+}
+.features_img_plus {
+  position: absolute;
+  transform: rotate(-3deg);
+  left: -100px;
+  top: -150px;
+}
+.features_img_plus img {
+  width: 20px;
+  height: 20px;
+}
+.features_img_circle_first {
+  position: absolute;
+  right: 700px;
+  top: 40px;
+}
+.features_img_circle_first img {
+  width: 20px;
+  height: 20px;
+}
+.features_img_circle_second {
+  position: absolute;
+  right: 230px;
+  top: -500px;
+}
+.features_img_circle_second img {
   width: 20px;
   height: 20px;
 }

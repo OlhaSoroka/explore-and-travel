@@ -155,17 +155,17 @@
     &_content {
         &_wrapper {
             flex-basis: 50%;
-            margin-left: 102px;
+            margin-left: 122px;
         }
         &_subheader {
             @include subheader;
             margin-top: 120px;
-            width: 460px;
+            width: 480px;
         }
         &_text {
             @include main_text;
             margin-top: 20px;
-            width: 460px;
+            width: 480px;
         }
     }
     &_btn {
@@ -192,6 +192,100 @@
             position: absolute;
             left: 630px;
             top: -50px;
+        }
+    }
+}
+// === FEATURES === //
+.features {
+    &_container {
+        margin: 392px 50px 0 50px;
+    }
+    &_content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 56px;
+    }
+    &_subheader {
+        @include subheader;
+    }
+    &_link {
+        @include link;
+        img {
+            padding-left: 11px;
+        }
+    }
+    &_card {
+        &_descr {
+            width: 120px;
+            height: 56px;
+            left: 240px;
+            top: 2315px;
+            background: #ffffff;
+            border-radius: 0px 6px 0px 0px;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 25px;
+            span {
+                @include main_text;
+                font-size: 15px;
+            }
+        }
+        &_wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        width: 261px;
+        height: 332px;
+        border-radius: 8px;
+        display: flex;
+        align-items: flex-end;
+        &:nth-child(1) {
+            background: url(../img/image\ 1.png);
+        }
+        &:nth-child(2) {
+            background: url(../img/image2.png);
+        }
+        &:nth-child(3) {
+            background: url(../img/image3.png);
+        }
+        &:nth-child(4) {
+            background: url(../img/imge4.png);
+        }
+    }
+    &_img {
+        &_container {
+            position: relative;
+        }
+        &_plus {
+            img {
+                width: 20px;
+                height: 20px;
+            }
+            position: absolute;
+            transform: rotate(-3deg);
+            left: -100px;
+            top: -150px;
+        }
+        &_circle_first {
+            img {
+                width: 20px;
+                height: 20px;
+            }
+            position: absolute;
+            right: 700px;
+            top: 40px;
+        }
+        &_circle_second {
+            img {
+                width: 20px;
+                height: 20px;
+            }
+            position: absolute;
+            right: 230px;
+            top: -500px;
         }
     }
 }
