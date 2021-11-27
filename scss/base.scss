@@ -215,6 +215,23 @@
         }
     }
     &_card {
+        width: 261px;
+        height: 332px;
+        border-radius: 8px;
+        display: flex;
+        align-items: flex-end;
+        &:nth-child(1) {
+            background: url(../img/image\ 1.png);
+        }
+        &:nth-child(2) {
+            background: url(../img/image2.png);
+        }
+        &:nth-child(3) {
+            background: url(../img/image3.png);
+        }
+        &:nth-child(4) {
+            background: url(../img/imge4.png);
+        }
         &_descr {
             width: 120px;
             height: 56px;
@@ -235,23 +252,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-        }
-        width: 261px;
-        height: 332px;
-        border-radius: 8px;
-        display: flex;
-        align-items: flex-end;
-        &:nth-child(1) {
-            background: url(../img/image\ 1.png);
-        }
-        &:nth-child(2) {
-            background: url(../img/image2.png);
-        }
-        &:nth-child(3) {
-            background: url(../img/image3.png);
-        }
-        &:nth-child(4) {
-            background: url(../img/imge4.png);
         }
     }
     &_img {
@@ -285,6 +285,75 @@
             position: absolute;
             right: 230px;
             top: -500px;
+        }
+    }
+}
+
+// === GUIDES === //
+.guides {
+    &_container {
+        margin-top: 290px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &_content {
+        &_subheader {
+            @include subheader;
+            margin-top: 150px;
+        }
+        &_text {
+            @include main_text;
+            width: 450px;
+            margin-top: 20px;
+        }
+    }
+    &_btn {
+        @include button_filled;
+        width: 164px;
+        height: 48px;
+        margin-top: 40px;
+    }
+    &_img {
+        &_container {
+            position: relative;
+        }
+        &_plus_first {
+            img {
+                width: 20px;
+                height: 20px;
+            }
+            position: absolute;
+            top: -130px;
+            left: 470px;
+            transform: rotate(10deg);
+        }
+        &_plus_second {
+            img {
+                width: 20px;
+                height: 20px;
+            }
+            position: absolute;
+            top: -500px;
+            right: -10px;
+        }
+        &_circle {
+            img {
+                width: 20px;
+                height: 20px;
+            }
+            position: absolute;
+            top: -470px;
+            left: 50px;
+        }
+    }
+    &_image {
+        position: relative;
+        img {
+            width: 600px;
+            height: 542px;
+            position: absolute;
+            right: 110px;
+            top: -40px;
         }
     }
 }

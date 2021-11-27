@@ -313,6 +313,18 @@
   display: flex;
   align-items: flex-end;
 }
+.features_card:nth-child(1) {
+  background: url(../img/image\ 1.png);
+}
+.features_card:nth-child(2) {
+  background: url(../img/image2.png);
+}
+.features_card:nth-child(3) {
+  background: url(../img/image3.png);
+}
+.features_card:nth-child(4) {
+  background: url(../img/imge4.png);
+}
 .features_card_descr {
   width: 120px;
   height: 56px;
@@ -337,18 +349,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.features_card:nth-child(1) {
-  background: url(../img/image\ 1.png);
-}
-.features_card:nth-child(2) {
-  background: url(../img/image2.png);
-}
-.features_card:nth-child(3) {
-  background: url(../img/image3.png);
-}
-.features_card:nth-child(4) {
-  background: url(../img/imge4.png);
 }
 .features_img_container {
   position: relative;
@@ -380,6 +380,90 @@
 .features_img_circle_second img {
   width: 20px;
   height: 20px;
+}
+
+.guides_container {
+  margin-top: 290px;
+  display: flex;
+  justify-content: space-between;
+}
+.guides_content_subheader {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #000000;
+  margin-top: 150px;
+}
+.guides_content_text {
+  font-family: "Mulish", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 30px;
+  color: #7d7987;
+  width: 450px;
+  margin-top: 20px;
+}
+.guides_btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 60px;
+  border: 1px solid #fb8f1d;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s;
+  color: white;
+  background-color: #fb8f1d;
+  width: 164px;
+  height: 48px;
+  margin-top: 40px;
+}
+.guides_btn:hover {
+  background-color: #fa8304;
+}
+.guides_img_container {
+  position: relative;
+}
+.guides_img_plus_first {
+  position: absolute;
+  top: -130px;
+  left: 470px;
+  transform: rotate(10deg);
+}
+.guides_img_plus_first img {
+  width: 20px;
+  height: 20px;
+}
+.guides_img_plus_second {
+  position: absolute;
+  top: -500px;
+  right: -10px;
+}
+.guides_img_plus_second img {
+  width: 20px;
+  height: 20px;
+}
+.guides_img_circle {
+  position: absolute;
+  top: -470px;
+  left: 50px;
+}
+.guides_img_circle img {
+  width: 20px;
+  height: 20px;
+}
+.guides_image {
+  position: relative;
+}
+.guides_image img {
+  width: 600px;
+  height: 542px;
+  position: absolute;
+  right: 110px;
+  top: -40px;
 }
 
 /*# sourceMappingURL=base.css.map */
