@@ -63,14 +63,12 @@
     font-family: $inter;
     font-weight: bold;
     font-size: 22px;
-    line-height: 48px;
     color: $black;
 }
 @mixin founder {
     font-family: $inter;
     font-weight: normal;
     font-size: 18px;
-    line-height: 48px;
     color: $black;
 }
 @mixin stories_subheader {
@@ -138,4 +136,12 @@
     &:hover {
         @include button_filled;
     }
+}
+@mixin testimonials_nav {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
